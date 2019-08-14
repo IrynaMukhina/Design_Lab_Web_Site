@@ -1,0 +1,225 @@
+@import 'variable';
+
+* {
+  margin: 0;
+  font-family: $fontStyle;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.dl-header {
+  background: url('../assets/Layer_8.png') no-repeat;
+  background-position: top right;
+  background-size: cover;
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100vw;
+  color: map-get($colors, main);
+  justify-content: center;
+  position: relative;
+
+  &-icon {
+    &-1 {
+      padding-bottom: 20px;
+      width: 45px;
+      height: 45px;
+
+    }
+
+    &-2 {
+      width: 15px;
+      height: 25px;
+      position: absolute;
+      bottom: 11%;
+    }
+  }
+
+  &-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 48%;
+    font-size: 2.1em;
+    letter-spacing: 8px;
+    line-height: 45px;
+  }
+
+  &-text {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 48%;
+    height: 70px;
+    @include smallTextStyle;
+  }
+}
+
+.dl-section {
+  position: relative;
+
+  &-about,
+  &-services,
+  &-wedo,
+  &-contact {
+    border: $borderStyle;
+    border-top: none;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 100px 0;
+    color: map-get($colors, secondary);
+
+    &-title {
+      margin-top: -10px;
+      @include titleTextStyle;
+
+      &::before {
+        @include border-top;
+        left: 26%;
+      }
+
+      &::after {
+        @include border-top;
+        right: 26%;
+      }
+    }
+
+    &-text {
+      padding: 5% 20%;
+      @include smallTextStyle;
+    }
+  }
+
+  &-services {
+    margin-bottom: 60px;
+    color: map-get($colors, main);
+    border-color: map-get($colors, main);
+
+    &-title {
+
+      &::before,
+      &::after {
+        border-color: map-get($colors, main);
+      }
+    }
+  }
+
+  &-wedo {
+    margin-top: 85px;
+    margin-bottom: 85px;
+
+    &-caption {
+      @include captionTextStyle;
+      margin-top: 20px;
+    }
+
+    &-text {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+
+    &-icon {
+
+      &-1,
+      &-2,
+      &-3 {
+        width: 50px;
+        height: 55px;
+      }
+
+      &-1 {
+        margin-top: 13%;
+      }
+    }
+  }
+
+  &-contact {
+    margin-bottom: 40px;
+
+    &-btn {
+      padding: 2% 15%;
+      margin-bottom: 30px;
+      background-color: map-get($colors, secondary);
+      color: map-get($colors, main);
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: lighten(map-get($colors, secondary), 20%);
+      }
+    }
+    &-title {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.services-wrapper {
+  background: url('../assets/Services_bg.png') no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 100%;
+}
+
+.dl-navigation {
+  &-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      position: relative;
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        width: 42%;
+      }
+
+      width: 28.5%;
+
+      &-image {
+        width: 100%;
+      }
+
+      &-title {
+        position: absolute;
+        color: map-get($colors, main);
+        text-transform: uppercase;
+        bottom: 0;
+        left: 0;
+        padding: 25px 25px;
+        font-size: 1.3em;
+        letter-spacing: 6px;
+
+        &:hover {
+          cursor: pointer;
+          color: map-get($colors, secondary);
+        }
+      }
+    }
+  }
+}
+
+.dl-footer {
+  flex-direction: row;
+  margin-bottom: 40px;
+
+  &-icon {
+    margin-right: 25px;
+    width: 23px;
+    height: 23px;
+  }
+
+  &-copyright {
+    font-size: 0.6em;
+  }
+}
+
+@import '_media_max_1024.scss', '_media_max_720.scss', '_media_max_320.scss';

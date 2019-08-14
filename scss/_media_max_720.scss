@@ -1,0 +1,83 @@
+@media screen and (max-width: 720px) {
+  .dl-header {
+    &-text {
+      font-size: 0.5em;
+    }
+
+    &-title {
+      font-size: 1.4em;
+    }
+  
+    &-title,
+    &-text {
+      width: 60%;
+    }
+  }
+
+  .dl-section {
+
+    &-about,
+    &-services,
+    &-wedo,
+    &-contact {
+      width: 65%;
+      margin: 100px 0;
+
+      &-title {
+        font-size: 1em;
+
+        &::before {
+          left: 17.5%;
+        }
+
+        &::after {
+          right: 17.5%;
+        }
+      }
+    }
+
+    &-services {
+      margin-bottom: 60px;
+    }
+
+    &-wedo {
+      &-icon {
+  
+        &-1,
+        &-2,
+        &-3 {
+          width: 40px;
+          height: 35px;
+        }
+  
+        &-1 {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+
+  .dl-navigation {
+    &-list {
+      &-item {
+        padding-top: 10px;
+        width: 49%;
+        height: 120px;
+
+        &:nth-child(2),
+        &:nth-child(5) {
+          width: 49%;
+        }
+
+        &-title {
+          padding: 10px 10px;
+          font-size: 1em;
+        }
+
+        &-image {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

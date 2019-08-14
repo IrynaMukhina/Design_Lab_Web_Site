@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  font-family: Lato;
+  text-align: center; }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center; }
+
+.dl-header {
+  background: url("../assets/Layer_8.png") no-repeat;
+  background-position: top right;
+  background-size: cover;
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+  justify-content: center;
+  position: relative; }
+  .dl-header-icon-1 {
+    padding-bottom: 20px;
+    width: 45px;
+    height: 45px; }
+  .dl-header-icon-2 {
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    bottom: 11%; }
+  .dl-header-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 48%;
+    font-size: 2.1em;
+    letter-spacing: 8px;
+    line-height: 45px; }
+  .dl-header-text {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 48%;
+    height: 70px;
+    font-size: 0.6em;
+    font-weight: 300;
+    line-height: 20px; }
+
+.dl-section {
+  position: relative; }
+  .dl-section-about, .dl-section-services, .dl-section-wedo, .dl-section-contact {
+    border: 1.5px solid #3c3c3c;
+    border-top: none;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 100px 0;
+    color: #3c3c3c; }
+    .dl-section-about-title, .dl-section-services-title, .dl-section-wedo-title, .dl-section-contact-title {
+      margin-top: -10px;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      letter-spacing: 4px;
+      line-height: 18px; }
+      .dl-section-about-title::before, .dl-section-services-title::before, .dl-section-wedo-title::before, .dl-section-contact-title::before {
+        margin-top: 10px;
+        content: '';
+        width: 13%;
+        border-top: 1.5px solid #3c3c3c;
+        position: absolute;
+        left: 26%; }
+      .dl-section-about-title::after, .dl-section-services-title::after, .dl-section-wedo-title::after, .dl-section-contact-title::after {
+        margin-top: 10px;
+        content: '';
+        width: 13%;
+        border-top: 1.5px solid #3c3c3c;
+        position: absolute;
+        right: 26%; }
+    .dl-section-about-text, .dl-section-services-text, .dl-section-wedo-text, .dl-section-contact-text {
+      padding: 5% 20%;
+      font-size: 0.6em;
+      font-weight: 300;
+      line-height: 20px; }
+  .dl-section-services {
+    margin-bottom: 60px;
+    color: #ffffff;
+    border-color: #ffffff; }
+    .dl-section-services-title::before, .dl-section-services-title::after {
+      border-color: #ffffff; }
+  .dl-section-wedo {
+    margin-top: 85px;
+    margin-bottom: 85px; }
+    .dl-section-wedo-caption {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 2.5px;
+      line-height: 18px;
+      margin-top: 20px; }
+    .dl-section-wedo-text {
+      padding-top: 20px;
+      padding-bottom: 50px; }
+    .dl-section-wedo-icon-1, .dl-section-wedo-icon-2, .dl-section-wedo-icon-3 {
+      width: 50px;
+      height: 55px; }
+    .dl-section-wedo-icon-1 {
+      margin-top: 13%; }
+  .dl-section-contact {
+    margin-bottom: 40px; }
+    .dl-section-contact-btn {
+      padding: 2% 15%;
+      margin-bottom: 30px;
+      background-color: #3c3c3c;
+      color: #ffffff;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      .dl-section-contact-btn:hover {
+        cursor: pointer;
+        background-color: #6f6f6f; }
+    .dl-section-contact-title {
+      font-size: 1.2em; }
+
+.services-wrapper {
+  background: url("../assets/Services_bg.png") no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 100%; }
+
+.dl-navigation-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .dl-navigation-list-item {
+    position: relative;
+    width: 28.5%; }
+    .dl-navigation-list-item:nth-child(2), .dl-navigation-list-item:nth-child(5) {
+      width: 42%; }
+    .dl-navigation-list-item-image {
+      width: 100%; }
+    .dl-navigation-list-item-title {
+      position: absolute;
+      color: #ffffff;
+      text-transform: uppercase;
+      bottom: 0;
+      left: 0;
+      padding: 25px 25px;
+      font-size: 1.3em;
+      letter-spacing: 6px; }
+      .dl-navigation-list-item-title:hover {
+        cursor: pointer;
+        color: #3c3c3c; }
+
+.dl-footer {
+  flex-direction: row;
+  margin-bottom: 40px; }
+  .dl-footer-icon {
+    margin-right: 25px;
+    width: 23px;
+    height: 23px; }
+  .dl-footer-copyright {
+    font-size: 0.6em; }
+
+@media screen and (max-width: 1024px) {
+  .dl-header-text {
+    font-size: 0.5em; }
+  .dl-header-title {
+    font-size: 1.6em; }
+  .dl-section-about, .dl-section-services, .dl-section-wedo, .dl-section-contact {
+    width: 50%; }
+    .dl-section-about-title, .dl-section-services-title, .dl-section-wedo-title, .dl-section-contact-title {
+      font-size: 1.2em; }
+      .dl-section-about-title::before, .dl-section-services-title::before, .dl-section-wedo-title::before, .dl-section-contact-title::before {
+        left: 25%; }
+      .dl-section-about-title::after, .dl-section-services-title::after, .dl-section-wedo-title::after, .dl-section-contact-title::after {
+        right: 25%; } }
+
+@media screen and (max-width: 720px) {
+  .dl-header-text {
+    font-size: 0.5em; }
+  .dl-header-title {
+    font-size: 1.4em; }
+  .dl-header-title, .dl-header-text {
+    width: 60%; }
+  .dl-section-about, .dl-section-services, .dl-section-wedo, .dl-section-contact {
+    width: 65%;
+    margin: 100px 0; }
+    .dl-section-about-title, .dl-section-services-title, .dl-section-wedo-title, .dl-section-contact-title {
+      font-size: 1em; }
+      .dl-section-about-title::before, .dl-section-services-title::before, .dl-section-wedo-title::before, .dl-section-contact-title::before {
+        left: 17.5%; }
+      .dl-section-about-title::after, .dl-section-services-title::after, .dl-section-wedo-title::after, .dl-section-contact-title::after {
+        right: 17.5%; }
+  .dl-section-services {
+    margin-bottom: 60px; }
+  .dl-section-wedo-icon-1, .dl-section-wedo-icon-2, .dl-section-wedo-icon-3 {
+    width: 40px;
+    height: 35px; }
+  .dl-section-wedo-icon-1 {
+    margin-top: 60px; }
+  .dl-navigation-list-item {
+    padding-top: 10px;
+    width: 49%;
+    height: 120px; }
+    .dl-navigation-list-item:nth-child(2), .dl-navigation-list-item:nth-child(5) {
+      width: 49%; }
+    .dl-navigation-list-item-title {
+      padding: 10px 10px;
+      font-size: 1em; }
+    .dl-navigation-list-item-image {
+      height: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .dl-header-text {
+    font-size: 0.5em; }
+  .dl-header-title {
+    font-size: 1.3em; }
+  .dl-header-title, .dl-header-text {
+    width: 90%; }
+  .dl-section-about, .dl-section-services, .dl-section-wedo, .dl-section-contact {
+    width: 80%; }
+    .dl-section-about-title, .dl-section-services-title, .dl-section-wedo-title, .dl-section-contact-title {
+      font-size: 0.8em; }
+      .dl-section-about-title::before, .dl-section-services-title::before, .dl-section-wedo-title::before, .dl-section-contact-title::before {
+        left: 10%; }
+      .dl-section-about-title::after, .dl-section-services-title::after, .dl-section-wedo-title::after, .dl-section-contact-title::after {
+        right: 10%; }
+  .dl-navigation-list {
+    flex-direction: column; }
+    .dl-navigation-list-item {
+      padding-top: 10px;
+      width: 100%; }
+      .dl-navigation-list-item:nth-child(2), .dl-navigation-list-item:nth-child(5) {
+        width: 100%; }
+    .dl-navigation-list-title {
+      padding: 10px 10px;
+      font-size: 1em; } }

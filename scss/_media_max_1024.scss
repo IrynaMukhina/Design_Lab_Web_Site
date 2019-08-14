@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px) {
+  .dl-header {
+    &-text {
+      font-size: 0.5em;
+    }
+
+    &-title {
+      font-size: 1.6em;
+    }
+  }
+
+  .dl-section {
+
+    &-about,
+    &-services,
+    &-wedo,
+    &-contact {
+      width: 50%;
+
+      &-title {
+        font-size: 1.2em;
+
+        &::before {
+          left: 25%;
+        }
+
+        &::after {
+          right: 25%;
+        }
+      }
+    }
+  }
+}

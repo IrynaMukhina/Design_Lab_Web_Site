@@ -1,0 +1,34 @@
+$fontStyle: Lato;
+$borderStyle: 1.5px solid #3c3c3c;
+$colors: (
+    main: #ffffff,
+    secondary: #3c3c3c,
+);
+
+@mixin titleTextStyle {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  line-height: 18px;
+}
+
+@mixin smallTextStyle {
+  font-size: 0.6em;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+@mixin captionTextStyle {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 2.5px;
+  line-height: 18px;
+}
+
+@mixin border-top {
+  margin-top: 10px;
+  content: '';
+  width: 13%;
+  border-top: $borderStyle;
+  position: absolute;
+}
